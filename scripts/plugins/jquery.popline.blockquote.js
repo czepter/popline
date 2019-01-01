@@ -52,7 +52,7 @@
 
   $.popline.addButton({
     blockquote: {
-      iconClass: "fa fa-quote-left",
+      iconClass: "format_quote",
       mode: "edit",
       action: function(event, popline) {
         var focusNode = $.popline.utils.selection().focusNode();

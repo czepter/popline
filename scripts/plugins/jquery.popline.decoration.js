@@ -10,7 +10,7 @@
 
   $.popline.addButton({
     bold: {
-      iconClass: "fa fa-bold",
+      iconClass: "format_bold",
       mode: "edit",
       action: function(event) {
         document.execCommand("bold");
@@ -18,7 +18,7 @@
     },
 
     italic: {
-      iconClass: "fa fa-italic",
+      iconClass: "format_italic",
       mode: "edit",
       action: function(event) {
         document.execCommand("italic");
@@ -26,7 +26,7 @@
     },
 
     strikethrough: {
-      iconClass: "fa fa-strikethrough",
+      iconClass: "format_strikethrough",
       mode: "edit",
       action: function(event) {
         document.execCommand("strikethrough");
@@ -34,7 +34,7 @@
     },
 
     underline: {
-      iconClass: "fa fa-underline",
+      iconClass: "format_underline",
       mode: "edit",
       action: function(event) {
         document.execCommand("underline");

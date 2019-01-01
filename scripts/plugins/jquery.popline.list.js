@@ -31,7 +31,7 @@
 
   $.popline.addButton({
     orderedList: {
-      iconClass: "fa fa-list-ol",
+      iconClass: "format_list_numbered",
       mode: "edit",
       action: function(event) {
         if ($.popline.utils.browser.firefox) {
@@ -45,7 +45,7 @@
     },
 
     unOrderedList: {
-      iconClass: "fa fa-list-ul",
+      iconClass: "format_list_bulleted",
       mode: "edit",
       action: function(event) {
         if ($.popline.utils.browser.firefox) {

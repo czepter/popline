@@ -1,4 +1,4 @@
-popline
+popline with material icons (fork by czepter)
 ============
 
 Popline is a non-intrusive WYSIWYG editor that shows up only after selecting a piece of text on the page, inspired by popclip.
@@ -41,7 +41,7 @@ $(".editor").popline();
 
 ## View Mode
 
-Popline also support `View Mode`, you can send a twitter, a facebook message, pin an image to pinterst, search with google in `View Mode` 
+Popline also support `View Mode`, you can send a twitter, a facebook message, pin an image to pinterst, search with google in `View Mode`
 
 
 ```js
@@ -92,7 +92,7 @@ Hack the theme css and create yours.
 
 ## Compatibility
 
-Tested on Chrome 27.0+, Safari 6.0.4+, Firefox 21.0+, Opera 15.0+, IE 8+
+Tested on Chrome 71.0+, Safari 6.0.4+, Firefox 21.0+, Opera 15.0+, IE 8+
 
 ## Sponsorer
 
@@ -110,7 +110,4 @@ License
 -------
 
 Copyright (c) 2014 kenshin54. Distributed under the MIT License. See LICENSE.txt for further details.
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/kenshin54/popline/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
+Copyright (c) 2019 czepter. Distributed under the MIT License. See LICENSE.txt for further details.

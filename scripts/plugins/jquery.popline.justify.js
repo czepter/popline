@@ -21,11 +21,11 @@
 
   $.popline.addButton({
     justify: {
-      iconClass: "fa fa-align-justify",
+      iconClass: "format_align_justify",
       mode: "edit",
       buttons: {
         justifyLeft: {
-          iconClass: "fa fa-align-left",
+          iconClass: "format_align_left",
           action: function(event, popline) {
             document.execCommand("JustifyLeft");
             removeRedundantParagraphTag(popline, "left");
@@ -33,7 +33,7 @@
         },
 
         justifyCenter: {
-          iconClass: "fa fa-align-center",
+          iconClass: "format_align_center",
           action: function(event, popline) {
             document.execCommand("JustifyCenter");
             removeRedundantParagraphTag(popline, "center");
@@ -41,7 +41,7 @@
         },
 
         justifyRight: {
-          iconClass: "fa fa-align-right",
+          iconClass: "format_align_right",
           action: function(event, popline) {
             document.execCommand("JustifyRight");
             removeRedundantParagraphTag(popline, "right");
@@ -49,14 +49,14 @@
         },
 
         indent: {
-          iconClass: "fa fa-indent",
+          iconClass: "format_indent_increase",
           action: function(event) {
             document.execCommand("indent");
           }
         },
 
         outdent: {
-          iconClass: "fa fa-dedent",
+          iconClass: "format_indent_decrease",
           action: function(event) {
             document.execCommand("outdent");
           }

@@ -1,3 +1,7 @@
+$background: #1d2126;
+$background-hover: #00625c;
+$font-size: 16px;
+
 @mixin rounded-corners($radius) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
@@ -23,12 +27,12 @@
   box-shadow:         $shadow;
 }
 
-$font-size: 24px;
 .popline {
+	background: $background;
   position: absolute;
-  @include rounded-corners(6px);
-  @include box-shadow(0px 2px 8px rgba(0, 0, 0, 0.75));
-  @include line-gradient(#2CA6F8 0%, #2B8AE2 100%);
+  @include rounded-corners($font-size/4);
+  // @include box-shadow(0px 2px 8px rgba(0, 0, 0, 0.75));
+  // @include line-gradient(#2CA6F8 0%, #2B8AE2 100%);
   opacity: 0.95;
   display: none;
   margin: 0;
@@ -37,6 +41,7 @@ $font-size: 24px;
   font-family: Arial, Helvetica, "Hiragino Sans GB", sans-serif;
   text-rendering: optimizeLegibility;
   white-space: nowrap;
+
   li {
     color: white;
     font-size: $font-size;
@@ -44,40 +49,44 @@ $font-size: 24px;
     cursor: pointer;
     text-align: center;
     display: inline-block;
-    @media screen and (-webkit-min-device-pixel-ratio:0) {
-      i { font-weight: bold; }
-    }
-    .popline-text {
+
+    .popline-text,
+	.material-icons {
       font-size: $font-size * 1.1;
-      top: -3px;
+      //top: -3px;
       display: inline-block;
       position: relative;
     }
-    .fa, .popline-background-fix {
-      -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    }
+
+	.popline-text {
+		top: -3px;	
+	}
+
     a {
-      background: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBR‌​AA7") 0 0 repeat\9;
       margin: 0;
       outline: none;
-      padding: 18px;
-      height: 22px;
+      padding: $font-size * .75;
+      height: $font-size * .9;
       vertical-align: middle;
       display: inline-block;
-      min-width: 24px;
-      &:link, &:hover, &:visited, &:active {
+      min-width: $font-size;
+
+      &:link,
+	  &:hover,
+	  &:visited,
+	  &:active {
         color: white;
         text-decoration: none;
       }
     }
   }
   .popline-hover {
-    background-color: darken(#2B8AE2, 10%);
-    @include line-gradient(darken(#2CA6F8, 10%) 0%, darken(#2B8AE2, 10%) 100%);
-    @include box-shadow(inset 0px 0px 8px rgba(0, 0, 0, 0.75));
+    background-color: $background-hover;
+    // @include line-gradient(darken(#2CA6F8, 10%) 0%, darken(#2B8AE2, 10%) 100%);
+    // @include box-shadow(inset 0px 0px 8px rgba(0, 0, 0, 0.75));
   }
   .popline-boxed {
-    padding: 0 9px;
+    padding: 0 2px;
   }
   .popline-lighter {
     font-weight: lighter;
@@ -89,15 +98,16 @@ $font-size: 24px;
   }
   .popline-textfield {
     border: none;
-    height: 56px;
-    height: 55px\9;
+    height: $font-size * 2 - 4px;
     vertical-align: top;
-    font-size: 24px;
-    @include box-shadow(inset 0px 0px 6px 0px rgba(0,0,0,0.30));
-    background: darken(#2B8AE2, 10%)\9;
-    background: rgba(74,74,74,0.15);
+    font-size: $font-size;
+    //@include box-shadow(inset 0px 0px 6px 0px rgba(0,0,0,0.30));
+    // background: darken(#2B8AE2, 10%)\9;
+    background: lighten($background, 20);
+	margin: 3px 0;
+	padding: 2px 4px;
     color: #FFFFFF;
-    line-height: 51px;
+    line-height: $font-size * 2 - 4px;
     display: none;
     outline: none;
     width: 300px;

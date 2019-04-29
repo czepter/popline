@@ -1,11 +1,19 @@
 {
-  "name": "popline",
-  "version": "1.0.0",
-  "author": "kenshin54",
-  "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-uglify": "0.2.2",
-    "grunt-contrib-jasmine": "~0.4.2",
-    "grunt-template-jasmine-istanbul": "~0.2.4"
-  }
+    "name": "material popline",
+    "version": "1.0.0",
+    "author": "czepter",
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "grunt-contrib-jasmine": "~0.4.2",
+        "grunt-contrib-uglify": "^4.0.1",
+        "grunt-template-jasmine-istanbul": "~0.2.4",
+        "gulp": "^4.0.1",
+        "gulp-concat": "^2.6.1",
+        "gulp-css-condense": "^1.1.2",
+        "gulp-minify-css": "^1.2.4",
+        "gulp-sass": "^4.0.2",
+        "gulp-sourcemaps": "^2.6.5",
+        "path": "^0.12.7"
+    },
+    "dependencies": {}
 }

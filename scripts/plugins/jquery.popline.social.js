@@ -21,7 +21,7 @@
 
   $.popline.addButton({
     search: {
-      iconClass: "fa fa-search",
+      iconClass: "search",
       mode: "view",
       action: function(event) {
         var url = "https://www.google.com/search?q=" + encodeURIComponent($.popline.utils.selection().text());
